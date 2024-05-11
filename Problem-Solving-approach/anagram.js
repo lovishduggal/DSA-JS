@@ -26,10 +26,11 @@ function anagram(str1, str2) {
         if (!(mappedOfStr1[key] === mappedOfStr2[key])) return false; // Value comparison
     }
 
-    // Logging is O(1), but not considered in time complexity analysis
-    console.log(mappedOfStr1, mappedOfStr2);
     return true; // Final return is O(1)
 }
+
+const result = anagram('listen', 'silent');
+console.log(result);
 
 // Time Complexity Analysis:
 
