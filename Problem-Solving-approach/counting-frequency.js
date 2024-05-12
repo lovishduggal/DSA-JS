@@ -12,7 +12,7 @@ function countingFrequency(arr1, arr2) {
                 flag = true;
                 break; // Breaks the inner loop if a match is found
             }
-            // After checking all elements in arr2, if no square match is found, return false
+            // After checking all elements in arr2, if no square match is not found, return false
             // This check happens at the end of each inner loop iteration, O(1)
             if (j === arr2.length - 1) {
                 if (!flag) return false;

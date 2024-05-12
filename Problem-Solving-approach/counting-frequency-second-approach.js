@@ -21,8 +21,6 @@ function countingFrequency(arr1, arr2) {
 
     // Third loop: O(n) - iterating over keys in mapOfArr1
     for (const key in mapOfArr1) {
-        // Accessing map values and comparison are O(1) operations
-        console.log('Freq', mapOfArr1[key] === mapOfArr2[key * key]);
         // Checking if the frequency of the square of the key in arr1 matches the frequency in arr2
         if (!(mapOfArr1[key] === mapOfArr2[key * key])) return false;
     }
@@ -42,4 +40,4 @@ console.log(result);
 // Third Loop (Over mapOfArr1 keys): The third loop iterates over the keys in mapOfArr1. The number of keys is at most n (the unique elements in arr1). Thus, this loop also has a time complexity of O(n).
 
 // Conclusion:
-// The overall time complexity of the countingFrequency function can be considered as O(n + m), where n is the length of arr1 and m is the length of arr2. This is because the first two loops are dependent on the lengths of the two input arrays respectively, and the third loop is dependent on the number of unique elements in arr1, which is at most n. This approach is more efficient than comparing each element of one array to every element of the other array, especially when the arrays contain a large number of elements.
+// The overall time complexity of the countingFrequency function can be considered as O(n + m), where n is the length of arr1 and m is the length of arr2. This is because the first two loops are dependent on the lengths of the two input arrays respectively, and the third loop is dependent on the number of unique elements in arr1, which is at most n. This approach is more efficient than comparing each element of one array to every element of the other array, especially when the arrays contain a large number of elements. The resultant TC would be O(n).
