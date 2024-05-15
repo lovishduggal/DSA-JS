@@ -1,3 +1,4 @@
+// Approach: 1
 // checking sum zero
 // [-5,-4,-3,-2,0,2,4,6,8] -> input
 // [-4,4] -> output
@@ -19,4 +20,6 @@ function checkingSum(arr) {
     }
     return false;
 }
-console.log(checkingSum([-5, -4, -3, -2, 0, 1, 6, 7, 8]));
+// The TC would be O(n^2): Quadratic TC
+const result = checkingSum([-5, -4, -3, -2, 0, 1, 6, 7, 8]);
+console.log(result);
