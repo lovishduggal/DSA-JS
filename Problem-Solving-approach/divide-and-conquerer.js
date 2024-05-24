@@ -15,10 +15,7 @@ function binarySearch(arr, number) {
 
     while (leftIndex <= rightIndex) {
         let middleIndex = Math.floor((leftIndex + rightIndex) / 2);
-
         if (number < arr[middleIndex]) {
-            // number =4, middle = 3
-            // [,12,3,4,5,6,7,8,9,10,11,12,13,14,15]
             rightIndex = middleIndex - 1;
         } else if (number > arr[middleIndex]) {
             leftIndex = middleIndex + 1;
@@ -32,8 +29,5 @@ function binarySearch(arr, number) {
 
 // The Tc would be:Logarithmic O(log n)
 
-const result = binarySearch(
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-    141
-);
+const result = binarySearch([1, 2, 3], 3);
 console.log(result);
