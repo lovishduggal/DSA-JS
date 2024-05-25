@@ -14,7 +14,7 @@ function findOddNumbers(arr) {
 
         return helperRecursiveFunc(tempArr);
     }
-    console.log(oddNumbersArr);
+
     return helperRecursiveFunc(arr);
 }
 const result = findOddNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
