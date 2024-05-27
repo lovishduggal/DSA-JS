@@ -231,6 +231,13 @@ const users = [
     },
 ];
 
+/**
+ * Checks if a given username is already taken in the provided array of users.
+ *
+ * @param {Array} arr - The array of user objects.
+ * @param {string} value - The username to check for.
+ * @returns {boolean} - Returns true if the username is taken, otherwise false.
+ */
 function isUserNameTaken(arr, value) {
     for (const user of arr) {
         if (user['username'] === value) return true;

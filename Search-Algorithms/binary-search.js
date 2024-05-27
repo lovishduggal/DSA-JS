@@ -1,6 +1,13 @@
 // binary search algorithm
 // find the index of a given no in an array
 
+/**
+ * Finds the index of a given element in a sorted array using binary search.
+ *
+ * @param {Array} arr - The sorted array to search within.
+ * @param {*} ele - The element to find the index of.
+ * @returns {number} The index of the element if found, otherwise -1.
+ */
 function indxOf(arr, ele) {
     if (arr.length === 0) return -1;
 
@@ -16,5 +23,7 @@ function indxOf(arr, ele) {
     return -1;
 }
 
+// The binary search is way faster than linear search
+// The TC would be: O(log n)
 const result = indxOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 6);
 console.log(result);
