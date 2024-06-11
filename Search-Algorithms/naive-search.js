@@ -10,9 +10,9 @@ function naiveSearch(string, subString) {
             }
         }
     }
-
-    console.log(tempStr, subString, i);
     return tempStr === subString ? true : -1;
 }
-const result = naiveSearch('hello', 'llo');
+
+// The TC would be Quadratic: O(n^2)
+const result = naiveSearch('hello duggal', 'ggl');
 console.log(result);
